@@ -1,0 +1,11 @@
+<template>
+    <lightning-button label="Navigate" value="Navigate" onclick={createrecord}>
+
+    </lightning-button>
+    <div class="slds-m-around_medium"></div>
+    <template for:each={contacts} for:item="Account">
+       <p key={item.id}>
+           {item.Name}
+       </p>
+   </template>
+</template>

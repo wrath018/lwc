@@ -1,0 +1,95 @@
+<template>
+    <!-- <h1>Welcome to world</h1>
+    <lightning-input label="Type Here" required value={inputText} onclick={handleclick}>
+
+    </lightning-input>
+       <p>
+           {greeting}
+       </p>
+        <p>
+            {inputText}
+        </p>
+     <p>
+       <lightning-button label="Click Me" value="ClickMe" onclick={getAccounts}></lightning-button>
+     </p>
+     <div>
+        <template if:true={displayAccs}>
+            <template for:each={result} for:item="Account">
+                <p key={Account.Name}>
+                    {Account.Name}
+                </p>
+            </template>
+        </template>
+     </div> -->
+
+     <!-- <div>
+         <lightning-button label="show me" onclick={showevent}>
+         
+         </lightning-button>
+         <lightning-button label="me" onclick={handleevent}>
+
+         </lightning-button>
+        
+        
+      </div>  -->
+      <!-- <lightning-input type="search"
+      onchange={handlechange}
+      label="search"
+      value={searchKey}
+></lightning-input>
+
+
+     <lightning-card title="card for demo">
+         <div style="height :200px">
+             <lightning-datatable
+                      key-field="id"
+                      data={data}
+                      columns={columns}
+                      onrowselection={handlerows}
+             ></lightning-datatable>
+         </div>
+     </lightning-card> 
+
+     -->
+
+     <!-- <lightning-card title="combo-box">
+         <lightning-combobox label="Status"
+                             value={value}
+                             plcaeholder="Select Account"
+                             options={options}
+                             onchange={handlechanged}></lightning-combobox>
+     </lightning-card>
+      value:{value}
+
+        <lightning-input type="search"
+      onchange={handlechange}
+      label="search"
+      value={searchKey}
+></lightning-input>
+
+    <template if:true={mona}>
+     <lightning-card title="card for demo">
+         <div style="height :200px">
+             <lightning-datatable
+                      key-field="id"
+                      data={data}
+                      columns={columns}
+                      onrowselection={handlerows}
+             ></lightning-datatable>
+         </div>
+     </lightning-card> 
+    </template> -->
+    
+
+    <lightning-card title="Record view form">
+        <lightning-record-view-form
+            record-id={recordid}
+            object-api-name={objectApiName}
+            density="Density"
+            >
+
+            <lightning-output-field field-name={namefield}></lightning-output-field>
+            <lightning-output-field field-name={faxfield}></lightning-output-field>
+        </lightning-record-view-form>
+    </lightning-card>
+</template> 

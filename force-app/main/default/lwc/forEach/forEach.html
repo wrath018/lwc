@@ -1,0 +1,55 @@
+<template>
+    <lightning-tabset>
+        <lightning-tab label="first">
+    <lightning-carousel>
+        <lightning-carousel-image
+          src="images/fuul.jpg"
+          header="fuul"
+          description="heelo fuul"
+          alternative-text="test"
+          href="https://en.wikipedia.org/wiki/Flower"
+        >
+
+        </lightning-carousel-image>
+
+        <lightning-carousel-image
+          src="images/fuul.jpg"
+          header="fuul"
+          description="heelo fuul"
+          alternative-text="test"
+          href="https://en.wikipedia.org/wiki/Flower"
+        >
+
+        </lightning-carousel-image>
+
+        <lightning-carousel-image
+          src="image/fuul.jpg"
+          header="fuul"
+          description="heelo fuul"
+          alternative-text="test"
+          href="https://en.wikipedia.org/wiki/Flower"
+        >
+
+        </lightning-carousel-image>
+        
+    </lightning-carousel>
+</lightning-tab>
+    <lightning-tab label="second">
+    <lightning-carousel>
+        <template if:true={pics}>
+            <template for:each={pics} for:item="s">
+                <lightning-carousel-image
+                key={s.id}
+             src={s.src}
+          header={s.header}
+          description={s.description}
+          
+          href={s.href}
+        ></lightning-carousel-image>
+            </template>
+        </template>
+    </lightning-carousel>
+</lightning-tab>
+</lightning-tabset>
+
+</template>

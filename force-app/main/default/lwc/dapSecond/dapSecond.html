@@ -1,0 +1,48 @@
+<template>
+       
+     
+           \
+     
+    
+    <div class="slds-p-horizontal_medium">
+        <lightning-combobox name="types" label="Type" value={value} options={TypeOptions} onchange={handleTypeChange}> </lightning-combobox> 
+   </div>
+          
+  
+
+    <lightning-record-form object-api-name={objectapiname}
+                              fields={fields}
+                              onsubmit={handlesubmit}>
+                            </lightning-record-form>
+                  <lightning-card>
+                    <lightning-tabset active-tab-value={activeTab}>  
+                        <lightning-tab label="first" value="1" onactive={handleactive}>
+                             value:{value1}
+                        </lightning-tab>
+                        <lightning-tab label="second" value="2"  onactive={handleactive}>value:{value1}</lightning-tab>
+                        <lightning-tab label="third"  value="3" onactive={handleactive}>value:{value1}</lightning-tab>
+                        <lightning-tab label="fourth" value="4" onactive={handleactive}>value:{value1}</lightning-tab>
+                        <lightning-tab label="fifth" value="5" onactive={handleactive}>value:{value1}</lightning-tab>
+                    </lightning-tabset>
+                            
+                    <lightning-button label="Previous" disabled={handleprevious} onclick={goBack}></lightning-button>
+                                <lightning-button label="Next" disabled={handlenext} onclick={goNext}></lightning-button> 
+                                
+                            </lightning-card>
+                        
+                            <!-- picklist for answers -->
+                     
+                            
+                                <lightning-card variant="Narrow" title="Mulit Select ComboBox" icon-name="custom:custom43">
+                                    <div class="slds-p-horizontal_small">
+                                        <c-dap-second-m
+                                            if:true={picklistValues} 
+                                            options={picklistValues}
+                                            onvaluechange={handleValueChange} 
+                                            label="Industry">
+                                        </c-dap-second-m>
+                                    </div>
+                                </lightning-card>
+                           
+                           
+</template>

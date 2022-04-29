@@ -1,0 +1,14 @@
+<template>
+    <lightning-card>
+    <lightning-record-form title="edit from"
+                           object-api-name={objectapiname}
+                           record-id={recordid}
+                           fields={fields}
+                             mode="edit"
+                        onsuccess={handlesuccess}
+                        >
+                      
+                    <lightning-button label="update" type="submit"></lightning-button>
+                </lightning-record-form>
+            </lightning-card>
+</template>

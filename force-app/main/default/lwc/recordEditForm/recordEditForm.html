@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="edit">
+      <lightning-record-edit-form title="record edit form"
+                                    record-id={id}
+                                   object-api-name={objectApiName}
+                                   onsubmit={submit}
+                                   onsuccess={success}
+                                   onerror={error}
+                                    >
+                            name: <lightning-input-field field-name={name} ></lightning-input-field>  
+                            numberofemployees: <lightning-input-field field-name={noe}></lightning-input-field>
+                            <lightning-input-field field-name={oobebi}></lightning-input-field>
+                            <!-- <lightning-input ></lightning-input>  -->
+                            <lightning-button class="slds-m-top_small" variant="brand" type="submit" name="update" label="Update">
+                            </lightning-button>
+                        
+      </lightning-record-edit-form> 
+      
+            </lightning-card>
+</template>

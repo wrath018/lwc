@@ -1,0 +1,9 @@
+<template >
+   
+      <lightning-card class="slds-cardalign_center" title="parent component"
+                    icon-name="standard:account" >
+               <p class="slds-text-align_center"> count: {value} </p>           
+                
+      </lightning-card>
+      <c-count-child onsubtract={subtract}  onadd={add} onmul={mul}></c-count-child> 
+</template>

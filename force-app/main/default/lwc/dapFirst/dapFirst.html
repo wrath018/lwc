@@ -1,0 +1,44 @@
+<template>
+    <lightning-tree-grid
+        key-field="Name"
+        data={data}
+        columns={gridColumns}
+    >
+    </lightning-tree-grid>
+     <p>value : {objectapiname}</p>
+    
+
+
+    
+    <!-- Modal will open on click of this modal -->
+    <lightning-button name="showModal" label="Show Modal" onclick={handleclick} variant="brand" class="slds-m-around_small"></lightning-button>
+    <template if:true={check}>
+    <!-- This Modal will only be visible if showModal is set to true -->
+  
+        <section aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container ">
+                <header class="slds-modal__header">
+                    <h2 class="slds-text-heading_small">Modal Header</h2>
+                    <lightning-icon class="slds-modal__close" icon-name="utility:close" size="small" onclick={closeModal}></lightning-icon>
+                </header>
+                <div class="slds-modal__content">
+                    <div class="slds-p-around_small">
+                       <lightning-record-form object-api-name={objectapiname}
+                                              fields={fields}
+                                              onsubmit={handlesubmit}
+                                              oncancel={closeModal}>
+                                              
+                                            </lightning-record-form>
+                    </div>
+                </div>
+                <footer class="slds-modal__footer">
+                    <lightning-button label="Save" onclick={closeModal}></lightning-button>
+                    <lightning-button variant="brand" label="Cancel" onclick={closeModal} class="slds-p-around_x-small"></lightning-button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+
+</template>

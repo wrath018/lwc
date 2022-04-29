@@ -1,0 +1,17 @@
+<template>
+  <div class="slds-m-around_large">
+  <c-child-component onbtnclick={handleevent}></c-child-component>
+</div>
+
+   <div>
+     <lightning-input value={value} onchange={msg}></lightning-input>
+   </div>
+    
+   <div>
+     {value}
+   </div>
+   
+    <div class="slds-m-around_large">
+     <lightning-button label="Click Me" value="Click Me" onclick={childcomp}></lightning-button>
+    </div>
+</template>
