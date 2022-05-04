@@ -36,6 +36,8 @@ export default class DapSecond extends LightningElement {
 }
 
 
+// TABSET START
+
 handleTypeChange(event){
     var Picklist_Value = event.target.value; 
     // Do Something.

@@ -1,0 +1,72 @@
+<template>
+    <lightning-record-form
+    object-api-name={objectApiName}
+    
+    fields={fields}
+    onsuccess={handleSuccess}
+>
+</lightning-record-form>
+
+<lightning-card>
+<lightning-tabset active-tab-value={activeTab}>  
+    <lightning-tab label="first" value="1" onactive={handleactive}>
+
+        
+<lightning-textarea placeholder="question" value={question0}></lightning-textarea>
+        <lightning-checkbox-group name="Checkbox Group"
+        label="Checkbox Group"
+        options={options11}
+        value={value1}
+
+        ></lightning-checkbox-group>
+<p>Selected Values are: {selectedValues}</p>
+
+    </lightning-tab>
+    <lightning-tab label="second" value="2"  onactive={handleactive}>
+        
+<lightning-textarea placeholder="question" value={question1}></lightning-textarea>
+        <lightning-checkbox-group name="Checkbox Group"
+                              label="Checkbox Group"
+                              options={options12}
+                              value={value2}
+                              
+                              ></lightning-checkbox-group>
+    <p>Selected Values are: {selectedValues}</p>
+
+    </lightning-tab>
+    <lightning-tab label="third"  value="3" onactive={handleactive}>
+        
+<lightning-textarea placeholder="question" value={question2}></lightning-textarea>
+        <lightning-checkbox-group name="Checkbox Group"
+                              label="Checkbox Group"
+                              options={options13}
+                              value={value3}
+                              
+                              ></lightning-checkbox-group>
+    <p>Selected Values are: {selectedValues}</p>
+
+    </lightning-tab>
+    <lightning-tab label="fourth" value="4" onactive={handleactive}>
+        
+<lightning-textarea placeholder="question" value={question3}></lightning-textarea>
+        <lightning-checkbox-group name="Checkbox Group"
+                              label="Checkbox Group"
+                              options={options14}
+                              value={value4}
+                            
+                              ></lightning-checkbox-group>
+    <p>Selected Values are: {selectedValues}</p>
+
+    </lightning-tab>
+
+    
+</lightning-tabset>
+<lightning-button label="Previous" disabled={handleprevious} onclick={goBack}></lightning-button>
+                                <lightning-button label="Next" disabled={handlenext} onclick={goNext}></lightning-button> 
+                                
+                            </lightning-card>
+
+
+
+
+</template>

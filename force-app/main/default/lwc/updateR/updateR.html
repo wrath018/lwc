@@ -1,0 +1,28 @@
+<template>
+    <lightning-layout>
+        <lightning-layout-item size="6">
+            <lightning-card title="Case Details using lightning-record-view-form">
+                <div class="slds-m-around_medium">
+        
+                    <!-- To view record-->
+                    <lightning-record-view-form object-api-name="Account" record-id={strCaseId}>
+                        <lightning-output-field field-name="Name"></lightning-output-field>
+                        <lightning-output-field field-name="NumberOfEmployees"></lightning-output-field>
+                        
+                    </lightning-record-view-form>
+                </div>
+            </lightning-card>
+        </lightning-layout-item>
+        <lightning-layout-item size="6">
+            <lightning-card title="Update Record in LWC">
+                <div class="slds-m-around_medium">
+                    <!-- To Update Record-->
+                    <lightning-textarea label="Enter Subject to Update" data-field="Subject" 
+                        class="slds-m-bottom_x-small"></lightning-textarea>
+                    <lightning-button variant="brand" label="Update Case" onclick={updateCase} 
+                        class="slds-m-left_x-small"></lightning-button>
+                </div>
+            </lightning-card>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

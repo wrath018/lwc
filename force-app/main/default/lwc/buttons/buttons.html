@@ -1,0 +1,24 @@
+<template>
+    <lightning-tabset >
+        <lightning-tab label="Button one">
+
+            <lightning-input  class="inpu1" type="number" ></lightning-input>
+            <lightning-input  class="inpu2" type="number" ></lightning-input>
+
+             <lightning-button type="submit" label="show" onclick={calulate}></lightning-button>
+            <template if:true={value}>
+              <lightning-input value={percen}></lightning-input>
+              <lightning-badge class={customclass} label={state} ></lightning-badge>
+            </template>
+        </lightning-tab>
+        <lightning-tab label="Button two">
+          
+
+            <lightning-input  class="inpu3" type="number" onchange={handlechange}></lightning-input>
+            <template if:true={value1}>
+                <lightning-textarea value="gopalpura bypass" class={customclass1}></lightning-textarea>
+            </template>
+
+        </lightning-tab>
+    </lightning-tabset>
+</template>

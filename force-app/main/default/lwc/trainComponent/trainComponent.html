@@ -1,0 +1,25 @@
+<template>
+    <lightning-button label="showtime" onclick={showtime}></lightning-button>
+    <lightning-button label="master"></lightning-button>
+    <template if:true={stime}>
+    <div class="slds-box">
+        <h2 class="header">Advanced Input Time</h2>
+        <lightning-input type="time" name="input4" label="Required Time field" required
+                         value="18:30:00.000Z" onchange={timechange}></lightning-input>
+                        </div>
+                    </template>
+             
+                 <template if:true={trains}>
+                     <template if:true={value}>
+                  <div >platform</div>
+                  <div id="1">{train1}</div>
+                  <div id="2">{train2}</div>
+                  <div>platform</div>
+                  <div id="3">{train3}</div>
+                  <div id="4">{train4}</div>
+                  <div>platform</div>
+                </template>
+                 </template>
+
+
+</template>
