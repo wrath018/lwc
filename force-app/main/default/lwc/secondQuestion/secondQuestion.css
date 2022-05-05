@@ -1,0 +1,21 @@
+.new{
+    position: absolute;
+    left: 60%;
+}
+
+.upl{
+    position: absolute;
+    left: 70%;
+}
+
+
+.slds-form-element{
+    float:right;
+    top: 0%;
+    width: 20%;
+
+}
+
+.slds-form-element1{
+    width: 70%;
+}

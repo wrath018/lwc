@@ -1,0 +1,41 @@
+<template>
+    <lightning-button class="new" variant="brand" label="New Folder"></lightning-button>
+    <lightning-button class="upl" variant=""  label="Upload"></lightning-button>
+
+    <div class="slds-form-element">
+        <label class="slds-form-element__label" for="select-01">Select View</label>
+        <div class="slds-form-element__control">
+          <div class="slds-select_container">
+            <select class="slds-select" id="select-01">
+              <option value="">Select…</option>
+              <option>List</option>
+              <option>Grid</option>
+              
+            </select>
+          </div>
+        </div>
+      </div>
+
+    </br>
+</br>
+
+<div class="slds-form-element1">
+    <label class="slds-form-element__label" for="text-input-id-1"></label>
+    <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+        <lightning-icon size="x-small" class="slds-icon slds-input__icon slds-input__icon_lest slds-icon-text-default" icon-name="utility:search"></lightning-icon>
+        <input type="text" id="text-input-id-1" placeholder="Search" class="slds-input" />
+    </div>
+</div>
+     
+
+    <div style="height: 300px;">
+        <lightning-datatable
+                key-field="id"
+                data={data}
+                columns={columns}>
+        </lightning-datatable>
+    </div>
+</template>
+
+
+</template>
